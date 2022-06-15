@@ -1,0 +1,32 @@
+.container {
+    background-color: #ccc;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.item {
+    background-color: #0000ff;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.item5 {
+    background-color: #00ff00;
+    color: #000;
+    grid-column-start: 4;
+    grid-column-end:5;
+
+    grid-row-start: 1;
+    grid-row-end:5;
+}
+
+.item3 {
+    background-color: #ff0000;
+    grid-column-start:1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}

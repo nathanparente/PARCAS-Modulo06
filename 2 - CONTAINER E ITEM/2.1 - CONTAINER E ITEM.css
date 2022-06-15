@@ -1,0 +1,11 @@
+.container {
+    display: grid;
+}
+
+.item {
+    background-color: #0000ff;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    font-size: 20px;
+}

@@ -1,0 +1,49 @@
+.container {
+    background-color: #ccc;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 
+        "header header header header"
+        "menu content content content"
+        "ad content content content"
+        "footer footer footer footer";
+}
+
+.item {
+    background-color: #0000ff;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    font-size: 20px;
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: menu;
+}
+
+section {
+    grid-area: content;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.ad {
+    grid-area:ad;
+}
+
+@media (max-width: 425px) {
+    .container {
+        grid-template-areas: 
+            "header header header menu"
+            "content content content content"
+            "footer footer footer ad"
+            ;
+    }
+
+}
